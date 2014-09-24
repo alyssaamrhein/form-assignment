@@ -7,8 +7,9 @@
 }
 
 body {
-  background
+  background: #999;
 }
+
 .page-wrapper {
   background-color: white;
   -webkit-box-shadow: 0px 0px 5px 1px #858285;
@@ -28,22 +29,25 @@ nav.sidebar {
   padding: 2em;
   width: 30%;
 }
+
 nav.sidebar ul {
   list-style-type: none;
   padding: 1em 0;
 }
+
 nav.sidebar ul li {
   padding: .25em 0;
   text-align: center;
 }
+
 nav.sidebar a {
   color: white;
   text-decoration: none;
 }
-nav.sidebar h1 {
-}
-nav.sidebar h3 {
-}
+
+nav.sidebar h1 {}
+nav.sidebar h3 {}
+
 section.form-container {
   background-color: white;
   float: left;
@@ -51,6 +55,33 @@ section.form-container {
   padding: 3em;
   width: 70%;
 }
+
 textarea:focus, input:focus {
 	border: 1px solid #900;
+}
+
+form {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 90%;
+}
+form ul {
+  list-style-type:none;
+}
+form ul li {
+  padding: 1em;
+}
+form input, textarea {
+  padding: .25em;
+}
+
+:focus {outline: none;}
+
+label {
+  display: inline-block;
+  text-align: right;
+}
+
+textarea {
+  vertical-align: top;
 }

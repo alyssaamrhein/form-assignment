@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <title>Form Assignment</title>
-    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <link rel="stylesheet" media="screen" href="style.css">
   </head>
   <body>
     <div class="page-wrapper">
@@ -23,13 +24,57 @@
       </nav>
       <section class="form-container">
         <form>
-          <label for="name">Name:</label>
-          <INPUT type="text" placeholder="First Last" name="name">
-          <br />
-          <label for="email">Email:</label>
-          <INPUT type="text" placeholder="Your Favorite Email" name="email">
-          <br />
-          <INPUT type="submit" value="Yeah!">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+                <input type="text" placeholder="First Last" name="name" />
+            </li>
+            <li>
+              <label for="name">Date:</label>
+                <input type="date" name="date">
+            </li>
+            <li>
+              <label for="email">Email:</label>
+                <input type="text" placeholder="Your Favorite Email" name="email" />
+            </li>
+            <li>
+              <label for="freetype">Share your opinion:</label>
+                <textarea id="freetype" placeholder="You put the words in here."></textarea>
+            </li>
+            <li>
+              <label for="radio">Click me</label>
+                <input type="radio" name="radio" id="radio" />
+                <label for="radio">or me</label>
+                  <input type="radio" name="radio" id="radio" />
+                  <label for="radio">maybe me</label>
+                    <input type="radio" name="radio" id="radio" />
+                    <label for="radio">NOT ME</label>
+                      <input type="radio" name="radio" id="radio" />
+            </li>
+            <li>
+              <label for="color">Pick a color</label>
+                <input type="color" name="color">
+            </li>
+            <li>
+              <label for="search">Look it up</label>
+                <input type="search" name="search">
+            </li>
+            <li>
+              <label for="url">Add your website.</label>
+                <input type="url" name="url" placeholder="http://">
+            </li>
+            <li>
+              <label for="dropdown">wat</label>
+                <select name="dropdown">
+                  <option value="good">good</option>
+                  <option value="better">better</option>
+                  <option value="best">best</option>
+                </select>
+            </li>
+          <div class="button">
+              <input type="submit" value="Yeah!">
+          </div>
+          </ul>
         </form>
       </section>
       <div style="clear:both;"></div>
