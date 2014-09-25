@@ -15,27 +15,27 @@
         <h1>Oh!</h1>
         <h3>The places you can go.</h3>
         <ul>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-          <li><a href="#">Five</a></li>
+          <a href="#"><li class="one">One</li></a>
+          <a href="#"><li class="two">Two</li></a>
+          <a href="#"><li class="three">Three</li></a>
+          <a href="#"><li class="four">Four</li></a>
+          <a href="#"><li class="five">Five</li></a>
         </ul>
       </nav>
-      <section class="form-container">
+      <div class="form-container">
         <form>
           <ul>
             <li>
               <label for="name">Name:</label>
-                <input type="text" placeholder="First Last" name="name" />
+                <input type="text" placeholder="First Last" class="fake-like-search" name="name" />
             </li>
             <li>
               <label for="name">Date:</label>
-                <input type="date" name="date">
+                <input type="date" class="fake-like-search" name="date">
             </li>
             <li>
               <label for="email">Email:</label>
-                <input type="text" placeholder="Your Favorite Email" name="email" />
+                <input type="text" placeholder="Your Favorite Email" class="fake-like-search" name="email" />
             </li>
             <li>
               <label for="freetype">Share your opinion:</label>
@@ -61,7 +61,7 @@
             </li>
             <li>
               <label for="url">Add your website.</label>
-                <input type="url" name="url" placeholder="http://">
+                <input type="url" name="url" class="fake-like-search" placeholder="http://">
             </li>
             <li>
               <label for="dropdown">wat</label>
@@ -73,10 +73,17 @@
             </li>
           <div class="button">
               <input type="submit" value="Yeah!">
+              <input type="reset" value="Reset">
           </div>
           </ul>
         </form>
-      </section>
+        <article>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+             and scrambled it to make a type specimen book.
+        </article>
+      </div><!-- end form-container -->
       <div style="clear:both;"></div>
     </div> <!--end page-wrapper -->
   </body>

@@ -8,10 +8,11 @@
 
 body {
   background: #999;
+  font-family: sans-serif;
 }
 
 .page-wrapper {
-  background-color: white;
+  background-color: black;
   -webkit-box-shadow: 0px 0px 5px 1px #858285;
           box-shadow: 0px 0px 5px 1px #858285;
   clear: left;
@@ -27,33 +28,50 @@ nav.sidebar {
   display: inline-block;
   float: left;
   padding: 2em;
-  width: 30%;
+  width: 40%;
 }
 
 nav.sidebar ul {
   list-style-type: none;
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 nav.sidebar ul li {
-  padding: .25em 0;
+  padding: 1em 0;
+  margin:1.25em 0;
   text-align: center;
 }
-
+li.one {
+    background-image:linear-gradient(red, #f06d06);
+}
+li.two {
+  background-image: linear-gradient(to right, #16a085, #2980b9);
+}
+li.three {
+  background-color: yellow;
+}
+li.four {
+  background-color: purple;
+}
+li.five {
+  background-color: orange;
+}
 nav.sidebar a {
   color: white;
   text-decoration: none;
 }
 
-nav.sidebar h1 {}
+nav.sidebar h1 {
+  margin-top: 2em;
+}
 nav.sidebar h3 {}
 
-section.form-container {
+.form-container {
   background-color: white;
   float: left;
   font-family: sans-serif;
   padding: 3em;
-  width: 70%;
+  width: 60%;
 }
 
 textarea:focus, input:focus {
@@ -63,14 +81,16 @@ textarea:focus, input:focus {
 form {
   border: 1px solid black;
   margin: 0 auto;
-  width: 90%;
 }
+
 form ul {
   list-style-type:none;
 }
+
 form ul li {
   padding: 1em;
 }
+
 form input, textarea {
   padding: .25em;
 }
@@ -84,4 +104,33 @@ label {
 
 textarea {
   vertical-align: top;
+}
+
+input[type="submit"] {
+  background-color: green;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  padding: .5em 1em;
+}
+
+input[type="reset"] {
+  background-color: red;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  padding: .5em 1em;
+}
+
+.fake-like-search {
+  -webkit-appearance: searchfield;
+}
+
+article {
+  -webkit-columns: 4 50px;
+     -moz-columns: 4 50px;
+          columns: 4 50px;
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
 }
